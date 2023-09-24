@@ -1,6 +1,6 @@
-﻿**WorkChain: Revolutionizing Client-Freelancer Collaboration with Trust and Transparency**
+## ﻿**WorkChain: Revolutionizing Client-Freelancer Collaboration with Trust and Transparency**
 
-**Introduction:**
+### **Introduction:**
 WorkChain is an innovative platform that facilitates seamless and cost-effective connections between clients and freelancers, built on the principles of trust and transparency. Smart Contract Features:
 
 1. **Project Definition and Budget Allocation:**
@@ -17,9 +17,9 @@ WorkChain is an innovative platform that facilitates seamless and cost-effective
 The contract has two owners who can confirm their status and agree on any changes to the contract state or logic. This prevents any single owner from changing or manipulating the contract without any checks or balances.
 
 The contract has a pause option that allows one of the owners to pause or resume the contract functions in case of an emergency or a vulnerability. This prevents any further damage or exploitation of the contract by malicious actors. However, users cannot send money to the contract when it is paused.      
-For a comprehensive understanding of the  smart contract, you can refer to the following video resource:
+**For a comprehensive understanding of the  smart contract, you can refer to the following video resource:**
 
-Explaining WorkChian smart contract - https://www.youtube.com/watch?v=eVKhva9LQcQ   
-**Network** : sepolia   
-**WorkChain deployed at**: 0x0368eF71c878Bb700e6C6602Ce7e4Bd1490EC02e
+   Explaining WorkChian smart contract - https://www.youtube.com/watch?v=eVKhva9LQcQ   
+   **Network** : sepolia   
+   **WorkChain deployed at**: 0x0368eF71c878Bb700e6C6602Ce7e4Bd1490EC02e
 
