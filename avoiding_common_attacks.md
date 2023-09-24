@@ -11,7 +11,7 @@ avoiding such attacks.
 
 This is an attack where a malicious contract can exploit the limited
 size of integer variables in Solidity and cause them to wrap around when
-they reach their maximum or minimum value. the 0.8.0 compiler
+they reach their maximum or minimum value. The 0.8.0 compiler
 automatically checks for overflow and underflow in arithmetic operations
 and reverts the transaction if they occur. This means that the values of
 integer variables will not wrap around when they reach their maximum or
