@@ -21,5 +21,6 @@ The contract has a pause option that allows one of the owners to pause or resume
 
    Explaining WorkChian smart contract - https://www.youtube.com/watch?v=eVKhva9LQcQ   
    **Network** : sepolia   
-   **WorkChain deployed at**: 0x0368eF71c878Bb700e6C6602Ce7e4Bd1490EC02e
+   **WorkChain deployed at**: 0x0368eF71c878Bb700e6C6602Ce7e4Bd1490EC02e   
+   **WorkChain_Front:** a simple user interface
 
