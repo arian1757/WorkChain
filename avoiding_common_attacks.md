@@ -1,4 +1,4 @@
-> **Reentrancy Attack Protection**
+## **Reentrancy Attack Protection**
 
 To protect the smart contract from reentrancy attacks, the contract
 utilizes the ReentrancyGuard library. Reentrancy attacks are a common
@@ -7,7 +7,7 @@ contract of its funds. Using this library, the smart contract is
 designed to prevent nested calls from untrusted contracts, effectively
 avoiding such attacks.
 
-**Arithmetic Overflow and Underflow**
+## **Arithmetic Overflow and Underflow**
 
 This is an attack where a malicious contract can exploit the limited
 size of integer variables in Solidity and cause them to wrap around when
@@ -18,7 +18,7 @@ integer variables will not wrap around when they reach their maximum or
 minimum limit, and the contract state will not be corrupted by invalid
 calculations
 
-**DoS Attacks**
+## **DoS Attacks**
 
 Protecting Against DoS Attacks. We understand the importance of
 maintaining a reliable service, even under extreme circumstances.
