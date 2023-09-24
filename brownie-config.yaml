@@ -1,0 +1,30 @@
+# config.yaml
+
+dependencies:
+  - 'OpenZeppelin/openzeppelin-contracts@4.9.0'
+  # - "smartcontractkit/chainlink-brownie-contracts@1.2.0"
+
+
+wallets :
+  from_key : ${Private_key}
+  
+compiler:
+  solc:
+    version: 0.8.0
+    optimizer:
+      enabled: true
+      runs: 200
+    remappings:
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.9.0'
+      # - '@chainlink=smartcontractkit/chainlink-brownie-contracts@1.2.0'
+
+dotenv: .env
+
+networks:
+  local:
+    host: HTTP://127.0.0.1:7545
+    port: 7545
+    chainid: 5777
+    cmd: ganache-cli
+    accounts: 10
+    mnemonic: enough ten surround mail inch fever inmate announce robust hub catch click

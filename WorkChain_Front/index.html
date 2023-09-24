@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WorkChain App</title>
+  <style>
+    body {
+      background-color: rgba(19, 7, 7, 0.952);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="number"],
+    input[type="string"] {
+      padding: 5px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      width: 200px;
+    }
+    /* CSS for the select element */
+    select#statusSelect {
+            width: 70px; /* Adjust the width as desired */
+            height: 30; /* Adjust the height as desired */
+            font-size: 15px; /* Adjust the font size as desired */
+        }
+    select#userTypeSelect {
+        width: 170px; /* Adjust the width as desired */
+        height: 29px; /* Adjust the height as desired */
+        font-size: 15px; /* Adjust the font size as desired */
+    }
+    select#userPositionSelect {
+        width: 170px; /* Adjust the width as desired */
+        height: 29px; /* Adjust the height as desired */
+        font-size: 15px; /* Adjust the font size as desired */
+    }
+
+    #connectButton {
+      background-color: #555;
+    }
+
+    #balanceButton {
+      background-color: #888;
+    }
+
+    #withdrawButton {
+      background-color: #777;
+    }
+
+    #fundButton,
+    #fundButtonPurpose,
+    #ValueAmount,
+    #foundersNumbers,
+    #foundersRank,
+    #EmergencyFund,
+    #EmergencyFundStatus,
+    #EmergencyFunding,
+    #Fundingdata {
+      background-color: #999;
+    }
+    .line-break {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <button id="connectButton">Connect</button>
+  <button id="Confirm">Confirm</button>
+  <select id="statusSelect">
+    <option value="false">false</option>
+    <option value="true">true</option>
+</select>
+  <button id="SetPause">Set Pause</button>
+  <button id="WithdrawTreasury">Withdraw Treasury</button>
+  <button id="GetStatus">get status</button>
+  <button id="GetTreasury">get Treasury</button>
+  <br class="line-break" />
+  <input id="DetailsProjectId" placeholder="Project Id" type="number" />
+  <button id="getProject">Project details</button>
+  <br class="line-break" />
+  <select id="userPositionSelect">
+    <option value="Employer">Employer</option>
+    <option value="Employee">Employee</option>
+</select>
+<input id="AddressProject" placeholder="0x" type="string" />
+  <button id="getUsersProjects">get Projects</button>
+  <button id="getUsersCredits">get Credits</button>
+<p>IDs: <span id="projectIDs"></span></p>
+<p>Creditss: <span id="Creditsavailable">ETH</span></p>
+<p>Locked: <span id="LockedCredit">ETH</span></p>
+
+  <br class="line-break" />
+  <input id="ProjectDescription" placeholder="Description" type="string" />
+  <input id="Budget" placeholder="Budget ETH" type="number" />
+  <input id="IncreaseCredit" placeholder="Increase credit" type="number" value='0'/>
+  <input id="ProjectDuration" placeholder="days" type="number" />
+  <button id="CreateProject">Create Project</button>
+  
+  <br class="line-break" />
+  <input id="_ProjectId" placeholder="Project Id" type="number" />
+  <input id="IncreaseCreditEmployee" placeholder="Increase credit" type="number" value='0'/>
+  <button id="AcceptProject">Accept Project</button>
+  <br class="line-break" />
+  <input id="CompletedProjectId" placeholder="Project Id" type="number" />
+  <button id="CompletedProject">Done</button>
+  <br class="line-break" />
+  <input id="ConfirmedProjectId" placeholder="Project Id" type="number" />
+  <button id="ConfirmedProject">Confirm</button>
+  <br class="line-break" />
+  <input id="RealeasePaymentId" placeholder="Project Id" type="number" />
+  <button id="RealeasePayment">Release Payment</button>
+  <br class="line-break" />
+  <input id="NotConfirmedProjectId" placeholder="Project Id" type="number" />
+  <button id="NotConfirmedProject">Not Confirmed</button>
+  <br class="line-break" />
+  <input id="DissatisfiedProjectId" placeholder="Project Id" type="number" />
+  <button id="DissatisfiedProject">Dissatisfied</button>
+  <br class="line-break" />
+  <h4>Select User Type</h4>
+    <select id="userTypeSelect">
+        <option value="Employer">Employer</option>
+        <option value="Employee">Employee</option>
+    </select>
+  <input id="Amountneeded" placeholder="ETH" type="number">  
+  <button id="WithdrawUsers">Withdraw</button>
+  <br class="line-break" />
+  <input id="ReviewProjectId" placeholder="Project Id" type="number" />
+  <button id="ReviewProject">Review</button>
+  <br class="line-break" />
+  <input id="FinalDecisionProjectId" placeholder="Project Id" type="number" />
+  <input id="FinalDecisionProportion" placeholder="Proportion" type="number" />
+  <button id="FinalDecisionProject">Final Decision</button>
+  <br class="line-break" />
+  <input id="CancelProjectId" placeholder="Project Id" type="number" />
+  <button id="CancelProject">Cancel</button>
+  <!-- <input id="goal" placeholder="Reason" type="string" /> -->
+  <!-- <input id="money" placeholder="ETH" type="number" /> -->
+  <!-- <button id="EmergencyFund">Start Emergency</button> -->
+  <br class="line-break" />
+  <!-- <button id="EmergencyFundStatus">Status Emergency</button> -->
+  <!-- <button id="Fundingdata">Funding Details</button>  -->
+  <p>Project ID: <span id="projectID"></span></p>
+  <p>Employer: <span id="employer"></span></p>
+  <p>Employee: <span id="employee"></span></p>
+  <p>Project Description: <span id="projectDescription"></span></p>
+  <p>Budget: <span id="budget"></span>ETH</p>
+  <p>Project Duration: <span id="projectDuration"></span> Days</p>
+  <p>DeadLine: <span id="deadLine"></span></p>
+  <p>EndTime: <span id="endTime"></span></p>
+  <p>isActive: <span id="isActive"></span></p>
+  <p>isCompleted: <span id="isCompleted"></span></p>
+  <p>isAccepted: <span id="isAccepted"></span></p>
+</body>
+<script src="./index.js" type="module"></script>
+</html>
