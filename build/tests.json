@@ -1,0 +1,15 @@
+{
+  "contracts": {
+    "WorkChain": "f868c5169f543b5c338da27711017cc952cda137"
+  },
+  "tests": {
+    "tests/test_.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "......F..F....",
+      "sha1": "729a8f19474f76dbce09736514bada718ee2b753",
+      "txhash": []
+    }
+  },
+  "tx": {}
+}
